@@ -1,0 +1,383 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Lost and Found</title>
+</head>
+
+<body>
+
+    <style>
+       body{background-image: url(https://media.istockphoto.com/id/1482432255/vector/abstract-blurred-gradient-background-colours-with-dynamic-effect.jpg?s=612x612&w=0&k=20&c=kDv1ghzwkOWyNjg-o5qe32zdd0Pt0YDdnETM1dMA8IA=);
+            background-size: 100% 100%;
+    
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10%;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 10px  rgba(0,0,0,0.4);
+
+    top: 0;
+    
+    
+    
+}
+
+.homepageh1{
+            color: black;
+            margin-left: -10%;
+            font-size: 35px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    nav h1 {
+    color: black;
+    margin-left: -10%;
+    font-size: 35px;
+    
+}
+
+nav ul {
+    margin-top: 30px;
+    margin-left: 70%;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    transition: 0.3;
+}
+
+
+nav a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color:  rgb(129, 129, 129);
+}
+
+.search{
+        border-radius: 30px;
+        height: 50px;
+        width: 80%;
+        display: inline;
+        border: none;
+        margin-top: 40px;
+        text-align: center;
+        box-shadow: 0px 1px 5px  rgba(0,0,0,0.4);
+        
+    }
+
+.search-bar{
+    text-align: center;
+}
+
+.homeh1{
+    color: white;
+    padding-left: 40px;
+    margin-top: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 75px;
+}
+
+p{
+    color: white;
+    display: block;
+    padding-left: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    font-size: 25px;
+    padding: none;
+}
+
+img{
+    display: inline-block;
+    height: 200px;
+    width: 400px;
+  
+}
+
+.landfimg{
+     margin-left: 65%;
+    margin-bottom: 150px;
+}
+.btna{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+button{
+
+    text-decoration: none;
+    height: 70px;
+    width: 170px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.2s;
+    background-color: white;
+}
+
+
+button:hover{
+    background-color: rgb(163, 163, 163);
+}
+
+.buttondiv{
+   height: 70px;
+   width: 370px;
+   gap: 20px;
+   margin-left: 30px;
+   margin-top: 30px;
+
+   
+}
+
+.buttontext{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+
+}
+
+ .cards {
+   display: flex;
+   flex-direction: row;
+   margin-top: 150px;
+   padding: 70px;
+   width: auto;
+    gap: 25px;
+}
+
+.card {
+     background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card p {
+    padding: 0 15px 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card h3{
+    color: white;
+    text-align: center;
+}
+
+.h1tag{
+    text-align: center;
+    margin-top: -30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+.cards2{
+   display: flex;
+   flex-direction: row;
+   margin-top: 100px;
+   padding: 70px;
+   width: auto;
+    gap: 25px;
+}
+
+.h1tagimg{
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    
+
+}
+
+
+
+.btt{
+    text-align: center;
+    position: sticky;
+    bottom: 0px;
+}
+
+
+
+.block{
+    color: rgb(194, 194, 194);
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+    </style>
+
+
+    <nav>
+        <a href="./Group project Z3.html" class="homepageh1">
+           <h1 id="login">FINDME</h1> 
+        </a>
+    
+    <ul>
+        <li><a href="./Report.html" class="menu">REPORT</a></li>
+        <li><a href="./Listings.html" class="menu">LISTINGS</a></li>
+        <li><a href="./Contact me.html" class="menu">CONTACT</a></li>
+    </ul>
+</nav>
+
+<div class="search-bar"> <input type="search" placeholder="Search for Listing" class="search"> </div>
+   
+<div>
+   
+   <div class="homeh1div">
+    <h1 class="homeh1">Lost something on campus? <br> Let's help you find it</h1>
+
+    <p>Search every corner of campus? Dont Stress! post search or report <br>
+        lost and found items in minutes. Reconnect with what matters.
+    </p>
+  
+    <div class="buttondiv">
+        <a href="./Report.html" class="btna"><button class="buttontext">Report an item</button></a>
+        
+        <a href="./Listings.html" class="btna"><button class="buttontext">Browse lost items</button></a>
+    </div>
+    
+    <!-- Cards 1 -->
+    <div class="cards">
+
+        <div class="card">
+            <a href="./Listings.html">
+            <img src="https://pbs.twimg.com/media/EfNjsY8WsAEAvS0.jpg">
+            <h3>ID Card</h3>
+            <p>School ID card, Come and claim your lost item!</p>
+            </a>    
+        </div>
+            
+            
+
+        <div class="card">
+            <a href="./Listings.html">
+            <img src="https://gadget.com.ng/wp-content/uploads/2025/12/IMG_8157-scaled.jpg">
+            <h3>iPhone 16</h3>
+            <p>iPhone 16 Light Green, Come and claim your lost item!</p>
+            </a>
+        </div>
+        
+        <div class="card">
+            <a href="./Listings.html">
+            <img src="https://res.cloudinary.com/kusnap/image/upload/v1721979988/mobile_test/ovahukjknfrfiwmn1p1g.jpg">
+            <h3>Wrist Watch</h3>
+            <p>G - Shock Red, Come and claim your lost item!</p>
+            </a>
+            
+        </div>
+        
+    </div>
+            
+    
+        <h1 class="h1tag">LATEST LOST ITEMS</h1>
+        
+    <!-- Card 2-->
+    <div class="cards2">
+
+        <div class="card">
+            <a href="./Listings.html">
+            <img src="https://cdn.allafrica.com/download/pic/main/main/csiid/00440177:b30c10b0f14d28adbab899181e70c4fc:arc614x376:w735:us1.jpg">
+            <h3>School Receipt</h3>
+            <p>Payment Receipt, Come and claim your lost item!</p>
+            </a>    
+        </div>
+
+        <div class="card">
+            <a href="./Listings.html">
+            <img src="https://okriks.com/wp-content/uploads/2022/04/BAG-43-448x448.jpg">
+            <h3>School Bag</h3>
+            <p>School Bag Green & Blue, Come and claim your lost item!</p>
+            </a>
+        </div>
+        
+        <div class="card">
+            <a href="./Listings.html">
+            <img src="https://okriks.com/wp-content/uploads/2022/04/BAG-64-448x448.jpg">
+            <h3>School Bag</h3>
+            <p>School Bag Green, Come and claim your lost item!</p>
+            </a>
+        </div>
+        
+    </div>        
+
+    <h1 class="h1tag" >LATEST FOUND ITEMS</h1>
+    
+
+    <div>
+        <p class="block">
+         © 2026 Eze Favourite. All Rights Reserved.
+         This work, including all content such as text, graphics, images, and code, <br>
+        is the property of Eze Favourite 
+        and is protected by applicable copyright laws. No part of this material may be copied, reproduced, distributed, or used <br>
+        in any form without prior written permission from the copyright owner. Unauthorized use may result in legal action.
+
+All trademarks and logos mentioned are the property of their respective owners. Their use does not imply any affiliation or endorsement.
+
+For permissions or inquiries, please contact: ezefavourite007@gmail.com.
+
+        </p>
+    </div>
+    
+<div class="btt">
+        <a href="#login" ><button class="h1tagimg"><i class="fa fa-arrow-up" aria-hidden="true"></i></button></a>
+    </div>
+       
+
+</div>
+    
+   </div>
+
+  
+
+ 
+
+   
+   
+</body>
+</html>
